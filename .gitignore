@@ -29,3 +29,10 @@ pnpm-debug.log*
 .env
 .env.*
 !.env.example
+
+# Generated building data (too large for git)
+backend/data/
+frontend/public/data/open_buildings.geojson
+frontend/public/data/open_buildings_points.geojson
+backend/json/
+backend/json_plot/

@@ -1,0 +1,15 @@
+{
+  "name": "mapsnepal-backend",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "import-buildings": "node ../scripts/import-buildings.mjs",
+    "dev": "node --experimental-sqlite server.js",
+    "start": "node --experimental-sqlite server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
