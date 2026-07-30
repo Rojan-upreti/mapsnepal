@@ -30,9 +30,13 @@ pnpm-debug.log*
 .env.*
 !.env.example
 
-# Generated building data (too large for git)
+# SQLite temp files
+backend/data/*.db-wal
+backend/data/*.db-shm
+backend/data/*.db-journal
+
+backend/json/open_buildings_batches.zip
+
+# SQLite DB exceeds GitHub LFS 2GB file limit — rebuild locally:
+#   cd backend && npm run import-buildings
 backend/data/
-frontend/public/data/open_buildings.geojson
-frontend/public/data/open_buildings_points.geojson
-backend/json/
-backend/json_plot/
